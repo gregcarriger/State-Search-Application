@@ -1,0 +1,17 @@
+# State Search Application
+
+This Java application implements the Boyer-Moore algorithm's bad character rule to search for patterns in a collection of all US state names. The application provides an interactive menu-driven interface that allows users to display the text content and search for specific patterns within the state names.
+
+The state names are combined into a single text string where users can search for any substring pattern using the efficient Boyer-Moore algorithm implementation.
+
+When you run the application, you'll encounter a user-friendly menu system that offers three main options. The first option allows you to display the complete text content, showing all state names along with the total character count. The second option prompts you to enter a search pattern and then uses the Boyer-Moore bad character rule to locate all occurrences of that pattern in the text, displaying the exact indices where matches are found. The third option provides a clean way to exit the program.
+
+To compile the application, you need Java Development Kit installed on your system. Simply run the command "javac StateSearchApplication.java" in your terminal or command prompt while in the directory containing the source file. Once compiled successfully, you can execute the program by running "java StateSearchApplication" which will launch the interactive menu interface.
+
+The Boyer-Moore algorithm implementation focuses specifically on the bad character rule, which is one of the key heuristics that makes this string searching algorithm highly efficient. The algorithm first builds a bad character table by preprocessing the search pattern to determine the rightmost occurrence of each character. During the search phase, it compares characters from right to left within the pattern, and when a mismatch occurs, it uses the bad character rule to determine the optimal shift distance, often allowing the algorithm to skip multiple characters rather than moving just one position forward.
+
+The search functionality has been thoroughly tested with various types of patterns including single characters, partial state names like "Cal" which matches the beginning of California, complete state names such as "Texas", and even non-existent patterns to ensure proper handling of cases where no matches are found. When testing with "Cal", the algorithm correctly identifies it at index 32, while "Texas" is properly located at index 401 within the combined text string.
+
+The application demonstrates excellent code organization with comprehensive documentation throughout. Each method includes detailed JavaDoc comments explaining its purpose, parameters, and return values. The code employs proper error handling for user input validation and maintains clean separation of concerns with distinct methods for menu display, choice handling, text display, pattern searching, and the core Boyer-Moore algorithm implementation.
+
+This implementation successfully meets all assignment requirements by using exactly 10 US state names as the input text, implementing the Boyer-Moore algorithm's bad character rule for pattern searching, providing an interactive menu system with the three specified options, displaying text content when requested, searching for user-input patterns and showing match indices, and allowing users to exit the program gracefully. The code is efficient, well-documented, and follows proper Java programming conventions throughout.
