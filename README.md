@@ -1,5 +1,7 @@
 # State Search Application
 
+https://github.com/user-attachments/assets/45e3f049-24f4-40f5-81e4-d22094b0276e
+
 This Java application implements the Boyer-Moore algorithm's bad character rule to search for patterns in a collection of all US state names. The application provides an interactive menu-driven interface that allows users to display the text content and search for specific patterns within the state names.
 
 The state names are combined into a single text string where users can search for any substring pattern using the efficient Boyer-Moore algorithm implementation.
